@@ -1,0 +1,15 @@
+{
+  "name": "normal-rust",
+  "collaborators": [
+    "Palmer-JC <qwerty99@rochester.rr.com>"
+  ],
+  "version": "0.1.0",
+  "files": [
+    "normal_rust_bg.wasm",
+    "normal_rust.js",
+    "normal_rust.d.ts"
+  ],
+  "module": "normal_rust.js",
+  "types": "normal_rust.d.ts",
+  "sideEffects": false
+}
