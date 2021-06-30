@@ -1,5 +1,11 @@
-/target
-**/*.rs.bk
+.DS_Store
+_delete
+node_modules
+dist
+*.local
+*.lock
+
+# rust
+target/
 Cargo.lock
-bin/
-wasm-pack.log
+# pkg/

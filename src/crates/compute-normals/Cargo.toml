@@ -1,5 +1,5 @@
 [package]
-name = "normal-rust"
+name = "compute-normals"
 version = "0.1.0"
 authors = ["Palmer-JC <qwerty99@rochester.rr.com>"]
 edition = "2018"
