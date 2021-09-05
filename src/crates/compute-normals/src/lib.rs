@@ -1,24 +1,21 @@
-mod utils;
 
 use wasm_bindgen::prelude::*;
-
 
 // #[cfg(not(target_feature = "simd128"))]
 // compile_error!("Simd not enabled, please check your configuration");
 
-// When the `wee_alloc` feature is enabled, use `wee_alloc` as the global
-// allocator.
-#[cfg(feature = "wee_alloc")]
-#[global_allocator]
-static ALLOC: wee_alloc::WeeAlloc = wee_alloc::WeeAlloc::INIT;
 
-#[wasm_bindgen]
 // Compute normals for given positions and indices
 // @param positions an array of vertex positions, [...., x, y, z, ......]
 // @param indices an array of indices in groups of three for each triangular facet, [...., i, j, k, ......]
 // @param normals an array of vertex normals, [...., x, y, z, ......]
 // https://github.com/BabylonJS/Babylon.js/blob/master/src/Meshes/mesh.vertexData.ts#L1102
-pub fn ComputeNormals(positions : & [f32], indices : & [u32], normals : & mut [f32]) {
+
+
+
+#[wasm_bindgen]
+pub fn ComputeNormals(positions: &[f32], indices: &[u32], normals: &mut[f32]) {
+
     // temporary scalar variables
     let mut p1p2x: f32;                    // p1p2 vector x coordinate
     let mut p1p2y: f32;                    // p1p2 vector y coordinate

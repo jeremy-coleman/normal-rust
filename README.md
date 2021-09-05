@@ -10,3 +10,4 @@ Changing to rust types, its now ~1.5x faster.
 
 using a local copy of vite plgin rsw because its input flags are not configurable to use --release, which we want to since we're benching
 
+note: I changed codegen-units to 1 from 16 in Cargo.toml
