@@ -1,3 +1,6 @@
+note to j, check a diff impl
+https://github.com/xinaesthete/shp-contour-wasm/blob/main/src/math.rs
+
 <h3><code>Wasm written Computation of Normals</code></h3>
 
 ## About
